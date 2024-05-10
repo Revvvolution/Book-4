@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
+body {
+    background-image: url("../images/kneelPageBG.gif");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 body,
 button,
 input,
 select,
 textarea {
-    color: #404040;
+    color: #484444;
     font-family: "Comfortaa", Arial, sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -15,8 +21,80 @@ textarea {
 h1,h2,h3,h4,h5,h6 {
     font-family: "Patua One", serif;
     letter-spacing: 2px;
+    text-shadow: 1.5px -1.5px rgba(143, 78, 78, 0.722);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #537db1;
+    font-size: 40px;
 }
 
 .order {
     margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.customOrders {
+    margin-top: 3rem;
+}
+
+.orderList {
+    font-size: 18px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px transparent royalblue;
+    background: linear-gradient(to bottom, #f8f8f8, #33ccff, #66aaff, #99bbdd);
+    box-shadow: 7px 7px 5px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: fit-content;
+    border: 1px transparent royalblue;
+    border-radius: 100% 50% 100% 50%;
+    background-color: #99bbdd;
+    box-shadow: 7px 7px 5px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    padding: 0.8rem;
+    border: 1px transparent salmon;
+    background: radial-gradient(#f8f8f8, salmon);
+    font-size: 16px;
+    font-weight: bolder;
+    position: center;
+}
+
+button:hover 
+{
+    background: radial-gradient(#FCFF4B 15%,#7CAFC4 70%,#C7A27C 84%);
+}
+
+button:active
+{
+    background: radial-gradient(#FCFF4B 15%,#7CAFC4 70%,#C7A27C 84%);
+    box-shadow: 0 3px #667;
+    transform: translateY(4px);
+}
+.customOrders {
+    color: azure;
+    text-shadow: 1.5px -1.5px #484444;
+}
+
+.customOrders h2 {
+    color: #537db1;
+    font-size: 30px;
 }

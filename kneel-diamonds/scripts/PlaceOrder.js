@@ -13,5 +13,5 @@ export const PlaceOrder = () => {
 
     document.addEventListener("click", handleOrderSubmissionClick)
 
-    return "<div><button id='placeOrder'>Place Order</button></div>"
+    return "<div><button id='placeOrder'>Place Custom Order</button></div>"
 }
