@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
+#container {
+    height: 100%;
+    width:100%;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(1, 162, 162), #bcbcbc 40%, #bcbcbc 60%,  rgb(1, 162, 162));
+}
 
 body,
 button,
@@ -12,8 +20,101 @@ textarea {
     line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
     font-family: "Patua One", serif;
     letter-spacing: 2px;
-    text-shadow: 1.5px -1.5px rgba(143, 78, 78, 0.722);
+    text-shadow: -1.5px 1.5px rgba(179, 205, 175, 0.842);
+}
+
+h1 {
+    font-family: "Patua One", serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: -1.5px 1.5px rgba(225, 248, 221, 0.889);
+}
+
+.order {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#placeOrder {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.customOrders {
+    margin-top: 3rem;
+    width: 50%;
+}
+
+.customOrders h2 {
+    font-size: 30px;    
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100;
+    height: 15%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: fit-content;
+    border: 4px ridge teal;
+    border-radius: 10%;
+    background-image: linear-gradient(to top, rgb(0, 144, 144), #c4c4c4 85%);
+    box-shadow: 7px 7px 5px;
+    width: 15%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.options h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+button {
+    padding: 0.8rem;
+    border: 1px transparent teal;
+    border-radius: 25%;
+    background: radial-gradient(#f8f8f8, teal);
+    font-size: 16px;
+    font-weight: bolder;
+    position: center;
+    box-shadow: 0 6px #667;
+}
+
+button:hover 
+{
+    background: radial-gradient(#FCFF4B 15%,#7CAFC4 70%,teal 84%);
+}
+
+button:active
+{
+    background: radial-gradient(#FCFF4B 15%,#7CAFC4 70%,teal 84%);
+    box-shadow: 0 3px #667;
+    transform: translateY(4px);
+}
+
+.orderList {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid teal;
+    background: radial-gradient(lightgreen 20%, teal);
+    padding: 1rem;
+    margin: 0.8rem 0;
+    box-shadow: 7px 7px 5px;
 }
